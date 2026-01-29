@@ -37,7 +37,6 @@ class CityController extends Controller
      */
     public function store(CityRequest $request)
     {
-        // Delegamos la lógica al servicio
         $this->cityService->createCity(
             $request->validated(), 
             $request->file('image')

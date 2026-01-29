@@ -132,7 +132,7 @@
         document.getElementById('modalDescription').innerText = "Consultando satélite...";
 
         try {
-            // 2. Llamada Fetch al Backend (Laravel)
+            // 2. Llamada Fetch al Backend
             const response = await fetch(`/cities/${cityId}/weather`);
             const result = await response.json();
 
