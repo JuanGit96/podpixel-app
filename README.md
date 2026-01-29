@@ -70,6 +70,7 @@ Abre el archivo .env en tu editor de código y configura:
 Base de Datos: Ingresa tus credenciales de MySQL (DB_DATABASE, DB_USERNAME, etc.).
 API Key: Agrega tu clave de OpenWeatherMap al final del archivo.
 
+```ini
 # Ejemplo en .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -78,7 +79,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 OPENWEATHER_API_KEY=tu_api_key_aqui
-
+```
 
 4. Base de Datos: Migraciones y Seeders (Crucial)
 Este comando es fundamental para iniciar el proyecto con datos.
@@ -105,16 +106,17 @@ php artisan serve
 
 Accede a la aplicación en tu navegador: http://127.0.0.1:8000/cities
 
-Ejecución de Pruebas
+## Ejecución de Pruebas
 El proyecto incluye pruebas automatizadas (Feature Tests) que verifican:
 
-Que la lista de ciudades cargue correctamente.
-Que se pueda crear una ciudad y subir una imagen.
-Que las validaciones de campos requeridos funcionen.
+1. Que la lista de ciudades cargue correctamente.
+2. Que se pueda crear una ciudad y subir una imagen.
+3. Que las validaciones de campos requeridos funcionen.
+
 Para ejecutar las pruebas:
 
-Bash
+```bash
 php artisan test
-
+```
 
 ###
